@@ -1,0 +1,11 @@
+#!/usr/bin/expect
+
+set username  [lindex $argv 0]
+set password  [lindex $argv 1]
+
+spawn mbsync $username
+
+expect "Password *:"
+send "$password\r"
+expect eof
+exit 0

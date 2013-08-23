@@ -1,0 +1,12 @@
+#!/bin/bash
+
+function lookup-pw {
+  security find-generic-password -w -a $1 Personal.keychain
+}
+
+
+for user in "hej" "dev" "gmail" "spotify";
+  do
+    echo "Syncing " $user
+    ~/bin/expect-sync $user `lookup-pw $user` 
+  done;
