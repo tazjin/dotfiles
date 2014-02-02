@@ -14,12 +14,10 @@ function fish_right_prompt
    echo -n ']'
 end
 
-set -gx EDITOR "emacsclient -n -create-frame"
+set -gx EDITOR "emacsclient -n"
 set -gx ALTERNATE_EDITOR emacs
 set -gx VISUAL emacsclient
 
 set fish_greeting ""
 
-set PATH /usr/local/share/python /usr/local/bin ~/Library/Haskell/bin ~/bin/ /Users/vincent/Source/management-scripts/google-apps/ $PATH
-
-source ~/.config/fish/boxen/env.fish
+set PATH /usr/local/bin ~/bin/  $PATH
