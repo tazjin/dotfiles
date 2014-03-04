@@ -1,4 +1,4 @@
 function stream
     xset dpms force off
-    airstream $argv
+    airstream -o 192.168.1.94 $argv 
 end

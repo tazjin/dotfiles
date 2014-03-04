@@ -20,4 +20,4 @@ set -gx VISUAL emacsclient
 
 set fish_greeting ""
 
-set PATH /usr/local/bin ~/bin/  $PATH
+set PATH /usr/local/bin ~/bin/ /home/vincent/.gem/ruby/2.1.0/bin $PATH
