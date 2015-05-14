@@ -1,4 +1,2 @@
-/plists/.DS_Store
-/.DS_Store
-/#init.el#
-/.#init.el
+config/fish/fishd*
+config/fish/fish_history
