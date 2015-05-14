@@ -1,0 +1,12 @@
+[Unit]
+Description=Compton - a desktop window compositor
+
+[Service]
+ExecStart=/usr/bin/compton --backend glx \
+                           --paint-on-overlay \
+                           --glx-no-stencil \
+                           --vsync opengl-swc -CG
+
+[Install]
+WantedBy=default.target
+

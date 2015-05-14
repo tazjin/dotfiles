@@ -1,0 +1,9 @@
+[Unit]
+Description=Dropbox - file synchronization utility
+
+[Service]
+ExecStart=/usr/bin/dropbox
+Restart=on-abort
+
+[Install]
+WantedBy=default.target

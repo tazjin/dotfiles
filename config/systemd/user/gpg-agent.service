@@ -1,0 +1,10 @@
+[Unit]
+Description=GPG key agent
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/gpg-agent --daemon
+Restart=on-abort
+
+[Install]
+WantedBy=default.target
