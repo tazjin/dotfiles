@@ -1,0 +1,34 @@
+#!/bin/bash
+
+readonly CMD="${1}"
+readonly MSG="${2}"
+
+function dmenu_ask() {
+    echo -e 'No\nYes' | \
+        dmenu -i -p "${MSG}"
+}
+
+function dmenu_nag() {
+    local select=$(dmenu_ask)
+    case $select in
+        "Yes")
+            bash -c "${CMD}"
+            ;;
+        *)
+            exit 0
+            ;;
+    esac
+}
+
+dmenu_nag
+
+#-nb '#151515' -nf '#999999' -sb '#f00060' -sf '#000000' -fn '-*-*-medium-r-normal-*-*-*-*-*-*-100-*-*'
+
+#     while [ "$select" != "NO" -a "$select" != "YES" ]; do
+#         local select=$()
+#         [ -z "$select" ] && exit 0
+#     done
+#     [ "$select" = "NO" ] && exit 0
+
+
+# i3-msg exit

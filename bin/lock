@@ -1,0 +1,8 @@
+#!/bin/bash
+
+set -u
+
+wallpapers=(/home/vincent/Dropbox/Wallpapers/simon-stalenhag-wps/*.png)
+wallpaper=$(printf "%s" "${wallpapers[RANDOM % ${#wallpapers[@]}]}")
+
+i3lock -i "${wallpaper}" -t
