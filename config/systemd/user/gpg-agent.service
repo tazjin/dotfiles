@@ -3,7 +3,7 @@ Description=GPG key agent
 
 [Service]
 Type=forking
-ExecStart=/usr/bin/gpg-agent --daemon
+ExecStart=/usr/bin/gpg-agent --daemon --enable-ssh-support
 Restart=on-abort
 
 [Install]
