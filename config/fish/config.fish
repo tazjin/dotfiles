@@ -13,6 +13,7 @@ end
 set -gx EDITOR "emacsclient -t"
 set -gx ALTERNATE_EDITOR emacs
 set -gx VISUAL emacsclient
+set -gx SSH_AUTH_SOCK "$HOME/.gnupg/S.gpg-agent.ssh"
 
 set fish_greeting ""
 
