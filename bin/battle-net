@@ -1,3 +1,9 @@
 #!/bin/bash
 
+# Enable nvidia driver optimisations for OpenGL
+export __GL_THREADED_OPTIMIZATIONS=1
+
+# Disable verbose wine logging
+export WINEDEBUG=-all
+
 wine "${HOME}/.wine/drive_c/Program Files (x86)/Battle.net/Battle.net Launcher.exe"
