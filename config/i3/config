@@ -173,3 +173,6 @@ bindsym XF86AudioLowerVolume exec --no-startup-id "pulseaudio-ctl down"
 
 # Lock screen
 bindsym F7 exec i3lock
+
+# Enable floating for popup windows (e.g. pinentry)
+for_window [title="pinentry"] floating enable
