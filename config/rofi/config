@@ -1,0 +1,2 @@
+rofi.matching: fuzzy
+#include "/usr/share/rofi/themes//DarkBlue.theme"
