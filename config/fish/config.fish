@@ -15,9 +15,6 @@ set -gx EDITOR "emacsclient"
 set -gx ALTERNATE_EDITOR "emacs -q -nw"
 set -gx VISUAL "emacsclient"
 
-# SSH & GPG configuration
-set -gx SSH_AUTH_SOCK "$XDG_RUNTIME_DIR/ssh-agent.socket"
-
 # Miscellaneous
 eval (direnv hook fish)
 
