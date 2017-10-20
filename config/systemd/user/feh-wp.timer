@@ -1,9 +1,0 @@
-[Unit]
-Description=Timer for wallpaper changes
-
-[Timer]
-OnActiveSec=3second
-OnUnitActiveSec=1hour
-
-[Install]
-WantedBy=default.target
